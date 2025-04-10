@@ -17,7 +17,8 @@ jobs:
     -name: Set up Python
       uses: actions/setup-python@v2
 
-      run: flask8 code/python
+    -name: Install dependencies
+      run: pip install flask8
 
     -name: Fist Step
 
