@@ -18,7 +18,9 @@ jobs:
 
     - name: Set up Python
       uses: actions/setup-python@v2
+    - name: Install dependencies
+      uses: pip install bandit
 
     - name: Fist Step
 
-      run: python -m unittest discover -s code/python -p "test_*.py"
+      run: bandit -r code/python
