@@ -1,0 +1,17 @@
+name: FLAKS
+
+on:
+  pull_request:
+ 
+
+jobs:
+
+  hello-world:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Fist Step
+
+      run: flask8 code/python
