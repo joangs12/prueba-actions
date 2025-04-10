@@ -11,7 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: checkoutcode
+      uses: actions/checkout@v2
 
-    - name: Fist Step
+    -name: Set up Python
+      uses: actions/setup-python@v2
+
+      run: flask8 code/python
+
+    -name: Fist Step
 
       run: flask8 code/python
